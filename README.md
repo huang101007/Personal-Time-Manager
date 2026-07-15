@@ -1,7 +1,7 @@
 # 專屬時間管理器(Personal Time Manager)
 
 ## 專案簡介
-這是我在大學時期為了將所學實際應用於生活而創建的專屬時間管理器。經過一年多的持續使用與迭代改進，此系統不僅涵蓋了多項高度客製化的功能，更成功幫助我在25學分的繁重課業下維持高效率，最終獲得書卷獎的肯定。這不僅僅是一個待辦事項清單，而是一個能適應個人學習節奏的智慧助理。
+這是我在大學時期為了將所學實際應用於生活而創建的專屬時間管理器。經過一年多的持續使用與迭代改進，此系統不僅涵蓋了多項高度客製化的功能，更成功幫助我在25學分的課業以及擔任系學會學術部長非常忙碌的狀態下，維持高效率，最終獲得書卷獎的肯定。活用自己所學，將知識真實改變自己生活。
 
 ## 核心功能
 * **教學大綱匯入與自動更新**：開學時可直接匯入各科教學大綱，系統將自動提取資訊並更新考試倒數時間，免去手動輸入的繁瑣。
@@ -29,19 +29,19 @@
 **各科權重分配**
 依各科難易度，調整各科時間分配權重，將剩餘可用時間依比例分配到時間表
 
-<img width="604" height="524" alt="image" src="https://github.com/user-attachments/assets/da0926ae-deda-4faf-91b1-3a07079f68b5" />
+<img width="604" height="524" alt="各科權重分配" src="https://github.com/user-attachments/assets/da0926ae-deda-4faf-91b1-3a07079f68b5" />
 
 
 **各科細部複習內容**
 可依預設比例在分配各科該花費幾小時做甚麼事情，也可手動調整
 
-<img width="865" height="389" alt="image" src="https://github.com/user-attachments/assets/a0f6fa6b-5c49-4ef8-aca7-4fc31e50d6c6" />
+<img width="865" height="389" alt="各科細部複習內容" src="https://github.com/user-attachments/assets/a0f6fa6b-5c49-4ef8-aca7-4fc31e50d6c6" />
 
 
 **心情管理器**
 依照考試密集程度以及歷史數據預測當天壓力程度(也可手動調整)，系統可以自動將複習進度排的鬆一點，並且把首頁顯示笑話當成給自己的小彩蛋
 
-<img width="865" height="535" alt="image" src="https://github.com/user-attachments/assets/2f4a450b-61ee-4222-a5f3-a36b47b349e0" />
+<img width="865" height="535" alt="心情管理器" src="https://github.com/user-attachments/assets/2f4a450b-61ee-4222-a5f3-a36b47b349e0" />
 
 
 ## 技術棧
@@ -66,9 +66,11 @@ src/
 
 ## 快速開始
 環境要求
-確保您的電腦已安裝Node.js。
+
+確保電腦已安裝Node.js。
 
 安裝與執行
+
 請在終端機執行以下指令：
 ```
 # 複製專案到本機
