@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans TC", system-ui, sans-serif;
+  --color-surface: #f8f9fb;
+  --color-glass: rgba(255, 255, 255, 0.55);
+  --color-glass-border: rgba(255, 255, 255, 0.7);
+  --color-accent: #5b7c99;
+  --color-accent-soft: #8fa8bc;
+  --color-warm: #c4a882;
+  --color-danger: #d4847a;
+  --color-success: #7ba88a;
+  --color-muted: #8a9199;
+  --color-text: #2c3338;
+  --color-text-soft: #5c656d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-surface);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 背景漸層與裝飾光暈 */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 20%, rgba(143, 168, 188, 0.25), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 80%, rgba(196, 168, 130, 0.2), transparent),
+    linear-gradient(165deg, #eef1f5 0%, #f5f3ef 45%, #e8edf2 100%);
+}
+
+.glass-card {
+  background: var(--color-glass);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 4px 24px rgba(44, 51, 56, 0.06),
+    0 1px 3px rgba(44, 51, 56, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.glass-card-strong {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(24px) saturate(1.5);
+  -webkit-backdrop-filter: blur(24px) saturate(1.5);
+}
+
+.placeholder-zone {
+  border: 1.5px dashed rgba(91, 124, 153, 0.35);
+  border-radius: 0.875rem;
+  background: rgba(255, 255, 255, 0.25);
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.8125rem;
+  text-align: center;
+  padding: 1rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.placeholder-zone:hover {
+  border-color: rgba(91, 124, 153, 0.55);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.section-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.badge-soon {
+  background: rgba(91, 124, 153, 0.12);
+  color: var(--color-accent);
+}
+
+/* 自訂捲軸 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 124, 153, 0.3);
+  border-radius: 3px;
+}
+
+.input-field {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.45);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field:focus {
+  border-color: rgba(91, 124, 153, 0.5);
+  box-shadow: 0 0 0 3px rgba(91, 124, 153, 0.12);
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(91, 124, 153, 0.2);
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(91, 124, 153, 0.25);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: rgba(91, 124, 153, 0.3);
+}
+
+.btn-ghost {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--color-text-soft);
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+@media print {
+  .app-bg,
+  aside,
+  header {
+    display: none !important;
+  }
+}
