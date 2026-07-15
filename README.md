@@ -11,30 +11,36 @@
 ## 系統截圖
 **主畫面**
 可快速了解各科進度及考試倒數
+
 <img width="861" height="388" alt="時間管理器主畫面" src="https://github.com/user-attachments/assets/bdaff96d-3cd2-4970-ac8e-7cd237328d26" />
 
 
 **功能列表**
+
 <img width="335" height="730" alt="功能列表" src="https://github.com/user-attachments/assets/1e6ff8d0-dd04-45f3-bc06-575777f4db4e" />
 
 
 **時間表**
 土黃色為固定課表，深藍為固定複習時間，扣除後剩餘可用時間會顯示在上面
+
 <img width="645" height="576" alt="時間表" src="https://github.com/user-attachments/assets/aa250030-f863-4da8-931e-ef2cb5fb92c3" />
 
 
 **各科權重分配**
 依各科難易度，調整各科時間分配權重，將剩餘可用時間依比例分配到時間表
+
 <img width="604" height="524" alt="image" src="https://github.com/user-attachments/assets/da0926ae-deda-4faf-91b1-3a07079f68b5" />
 
 
 **各科細部複習內容**
 可依預設比例在分配各科該花費幾小時做甚麼事情，也可手動調整
+
 <img width="865" height="389" alt="image" src="https://github.com/user-attachments/assets/a0f6fa6b-5c49-4ef8-aca7-4fc31e50d6c6" />
 
 
 **心情管理器**
 依照考試密集程度以及歷史數據預測當天壓力程度(也可手動調整)，系統可以自動將複習進度排的鬆一點，並且把首頁顯示笑話當成給自己的小彩蛋
+
 <img width="865" height="535" alt="image" src="https://github.com/user-attachments/assets/2f4a450b-61ee-4222-a5f3-a36b47b349e0" />
 
 
